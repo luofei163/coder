@@ -1861,3 +1861,10 @@ export const getJFrogXRayScan = async (options: GetJFrogXRayScanParams) => {
     }
   }
 };
+
+export const getIntelCohorts = async (organizationId: string) => {
+  const response = await axiosInstance.get<TypesGen.IntelCohort[]>(
+    `/api/v2/organizations/${organizationId}/intel/cohorts`,
+  );
+  return response.data;
+}
