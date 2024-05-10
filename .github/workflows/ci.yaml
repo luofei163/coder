@@ -920,7 +920,7 @@ jobs:
         uses: actions/dependency-review-action@5bbc3ba658137598168acb2ab73b21c432dd411b
         with:
           allow-licenses: Apache-2.0, BSD-2-Clause, BSD-3-Clause, CC0-1.0, ISC, MIT, MIT-0, MPL-2.0
-          allow-dependencies-licenses: "pkg:golang/github.com/pelletier/go-toml/v2,pkg:golang/gopkg.in/DataDog%2fdd-trace-go.v1"
+          allow-dependencies-licenses: "pkg:golang/gopkg.in/DataDog/dd-trace-go.v1"
           license-check: true
           vulnerability-check: false
       - name: "Report"
